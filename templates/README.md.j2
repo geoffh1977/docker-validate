@@ -1,7 +1,7 @@
-# Code Validation Container #
+# {{ appName }} Container #
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/geoffh1977/validate.svg?style=plastic)
-![GitHub](https://img.shields.io/github/license/geoffh1977/docker-validate.svg?style=plastic)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/{{ dockerUser }}/{{ finalImageName }}.svg?style=plastic)
+![GitHub](https://img.shields.io/github/license/{{ dockerUser }}/docker-{{ finalImageName }}.svg?style=plastic)
 
 ## Description ##
 Adds tooling to a container which can be used with validate code. Current tools:
@@ -11,7 +11,7 @@ Adds tooling to a container which can be used with validate code. Current tools:
 * CFN Nag - Scan Cloudformation For Security Issues
 * Shell Check - Validates Shell Files
 
-## Building The Code Validation Container ##
+## Building The {{ appName }} Container ##
 After cloning the repository, simply execute the _make build_ command while in the repository root path to execute a docker build of the current Dockerfile. The Makefile contains a number of useful commands which perform different actions.
 
 ### Getting In Contact ###

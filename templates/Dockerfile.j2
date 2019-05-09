@@ -1,6 +1,6 @@
 # Project Build Container
-FROM geoffh1977/python3:latest
-LABEL maintainer="geoffh1977 <geoffh1977@gmail.com>"
+FROM {{ dockerUser + "/" + buildImageName + ":" + buildImageVersion }}
+LABEL maintainer="{{ dockerUser }} <{{ dockerUserEmail }}>"
 USER root
 
 # Install Packages
